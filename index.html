@@ -1,0 +1,86 @@
+<HTML>
+	<HEAD>
+		<TITLE>
+			HomePage
+		</TITLE>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link rel="stylesheet" href="style.css">
+		<link rel="manifest" href="/manifest.json">
+	</HEAD>
+	<BODY>
+	<script src="js/app.js"></script>
+	<script>
+	if (‘serviceWorker’ in navigator) {
+	 window.addEventListener(‘load’, function() {  
+	   navigator.serviceWorker.register(‘/sw.js’).then(
+		 function(registration) {
+		   // Registration was successful
+		   console.log(‘ServiceWorker registration successful with scope: ‘, registration.scope); },
+		 function(err) {
+		   // registration failed :(
+		   console.log(‘ServiceWorker registration failed: ‘, err);
+		 });
+	 });
+	}
+	</script>
+		<div id="header">
+			<H1>BARTER-NOW</H1>
+		</div>
+		<div class="container">
+			<div id="cont1">
+				<div class="block">
+						<H4>Иван: <BR>
+						<a href="popular.html">Готов обменять кроссовки на...</a></H4>
+					<div id="b1">
+					</div>
+						<H4>Владимир:
+						<a href="popular.html">Монитор 2018 года, готов обменять на...</a></H4>
+					<div id="b2">
+					</div>
+						<H4>Галина: 
+						<a href="popular.html">готова обменять перьевые ручки...</a></H4>
+					<div id="b3">
+					</div>
+						<H4>Santehnik.com: <a href="#">предоставляем услуги сантехника в обмен на...</a></H4>
+					<div id="b4">
+					</div>
+				</div>
+			</div>
+			<div id="cont2">
+				<div class="container">
+					<div id="cont3">
+						<ul>
+							<li><a href="#">Home</a></li>
+							<li><a href="popular.html">Popular</a></li>
+							<li><a href="feedback.html">Feedback</a></li>
+							<li><a href="about_us.html">About us</a></li>
+							<li><a href="contact.html">Contact</a></li>
+						</ul>
+					</div>
+				</div>
+				<p><H1>Это главная страница сайта :)</H1></p>
+				<div class="left">
+					<H2>
+					<p><u>Что такое BARTER-NOW?</u></p>
+					<p>Это новый российский сайт, который поможет пользователям
+					обменять ненужные им вещи<BR>
+					и получить то, что им действительно нужно!</p>
+					<p>Для достижения этой цели наш сайт предлагает пользователям приложение,<BR>
+					в котором они, благодаря умному созданию цепочки обменов, смогут получить то,<BR>
+					чего они хотят.</p>
+					</H2>
+				</div>
+				<!--
+				<div class="center">
+					<img src="1.jpg">
+				</div>
+				-->
+			</div>
+		</div>
+		<div id="bottom">
+			<div class="up_button">
+				<a href="#">Наверх</a>
+			<div>
+		</div>
+	</BODY>
+</HTML>
